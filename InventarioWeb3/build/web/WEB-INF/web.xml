@@ -12,6 +12,10 @@
         <servlet-name>SERVLOGIN</servlet-name>
         <servlet-class>Controller.SERVLOGIN</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Usuarios</servlet-name>
+        <servlet-class>Controller.Usuarios</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/index</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>SERVLOGIN</servlet-name>
         <url-pattern>/SERVLOGIN</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Usuarios</servlet-name>
+        <url-pattern>/Usuarios</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

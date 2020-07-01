@@ -1,21 +1,24 @@
-<%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
 
+
+  <link href="bootstrap/css/propio.css" rel="stylesheet" type="text/css"/>
 <div>
-    <div class="encabezado">
-        SISTEMA DE CONTROL DE INVENTARIO
-        <!-- Los href aca apuntan a los servlets creados dentro del controlador -->
-        <a href="index" class="btn btn-primary btn-sm" role="button">Inicio</a>
-        <!--<a href="categorias" class="btn btn-primary btn-sm" role="button">Categorias</a>-->
-        <a href="categorias?opcion=listar" class="btn btn-primary btn-sm" role="button">Categorias</a>
-        
-           <a href="login.jsp" class="btn btn-primary btn-sm" role="button">Salir</a>
-           
-           <a class="btn btn-danger btn-sm text-right  col-lg-offset-6"   > <img src="../bootstrap/img/iconfinder_user_male2_172626.png" width="60" height="60" alt=""/>    Usuario: ${nom}</a>
-           
    
+      <div class="encabezado " id="menu">
        
-    </div>
+        <!-- Los href aca apuntan a los servlets creados dentro del controlador -->
+        
+        <!--<a href="categorias" class="btn btn-primary btn-sm" role="button">Categorias</a>-->     
+<ul >
+    <li><h4> SISTEMA DE CONTROL DE INVENTARIO</h4></li>
+    <li><a href="index1.jsp"  role="button">Inicio</a> </li>
+    <li><a href="categorias?opcion=listar"  role="button">Categorias</a> </li>
+    <li><a href="Usuarios?opcion=listar"  role="button">Usuario</a> </li>
     
-    <div class="contenido">
-   <!--Este div no se cierra aquí, se cierra en el pie.jspf -->
+    
+    <li><a href="#">Sesion</a>
+    <ul>
+    <li><a href="index.jsp?cerrar=true">Cerrar sesion</a></li>
+
+    </ul>
+  </li>
