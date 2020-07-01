@@ -11,13 +11,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List<String> _jspx_dependants;
 
-  static {
-    _jspx_dependants = new java.util.ArrayList<String>(3);
-    _jspx_dependants.add("/WEB-INF/Vistas-Parciales/css-js.jspf");
-    _jspx_dependants.add("/WEB-INF/Vistas-Parciales/encabezado.jspf");
-    _jspx_dependants.add("/WEB-INF/Vistas-Parciales/pie.jspf");
-  }
-
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
   public java.util.List<String> getDependants() {
@@ -49,91 +42,60 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("<!DOCTYPE html>\r\n");
       out.write("<html>\r\n");
       out.write("    <head>\r\n");
-      out.write("        <title>Control de Inventario</title>\r\n");
-      out.write("        <meta charset=\"UTF-8\">\r\n");
-      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n");
-      out.write("        <!-- Incluimos la vista parcial la cual contiene las url de las librerias \r\n");
-      out.write("             correspondientes a estilos y js\r\n");
-      out.write("        -->\r\n");
-      out.write("        ");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("<!-- Estilo personalizado -->\n");
-      out.write("<link href=\"bootstrap/css/estilo-base.css\" type=\"text/css\" rel=\"stylesheet\">\n");
-      out.write("\n");
-      out.write("<!-- Estilos bootstrap -->\n");
-      out.write("<link href=\"bootstrap/css/bootstrap-theme.css\" type=\"text/css\" rel=\"stylesheet\">\n");
-      out.write("<link href=\"bootstrap/css/bootstrap-theme.min.css\" type=\"text/css\" rel=\"stylesheet\">\n");
-      out.write("\n");
-      out.write("<link href=\"bootstrap/css/bootstrap.css\" type=\"text/css\" rel=\"stylesheet\">\n");
-      out.write("<link href=\"bootstrap/css/bootstrap.min.css\" type=\"text/css\" rel=\"stylesheet\">\n");
-      out.write("\n");
-      out.write("<!-- Script js de bootstrap -->\n");
-      out.write("<script src=\"bootstrap/js/bootstrap.js\" type=\"text/javascript\"></script>\n");
-      out.write("<script src=\"bootstrap/js/bootstrap.min.js\" type=\"text/javascript\"></script>\n");
-      out.write("\n");
-      out.write("<!-- Script librería de jquery -->\n");
-      out.write("<script src=\"bootstrap/js/jquery-3.2.1.js\" type=\"text/javascript\"></script>\n");
-      out.write("<script src=\"bootstrap/js/jquery-3.2.1.min.js\" type=\"text/javascript\"></script>\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\r\n");
-      out.write("        \r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <link href=\"bootstrap/css/style.css\" rel=\"stylesheet\" type=\"text/css\"/>\r\n");
+      out.write("        <link href=\"bootstrap/css/bootstrap.css\" rel=\"stylesheet\" type=\"text/css\"/>\r\n");
+      out.write("        <title>INICIO DE SESSION</title>\r\n");
       out.write("    </head>\r\n");
-      out.write("    <body>\r\n");
-      out.write("        \r\n");
-      out.write("        <nav class=\"navbar navbar-default bg-danger\">\r\n");
-      out.write("            \r\n");
-      out.write("            <a class=\"navbar-toggle\"><span class=\"navbar-toggle\"></span>Home</a>\r\n");
-      out.write("            \r\n");
-      out.write("            \r\n");
-      out.write("        </nav>\r\n");
-      out.write("        <!-- Vistar parciales de la parte superior de nuestra aplicación -->\r\n");
+      out.write("    <body style=\"background-color: #12c0a3\">\r\n");
+      out.write("    <center> <div  class=\"container\">\r\n");
+      out.write("             <div class=\"box\">\r\n");
+      out.write("                     <img src=\"bootstrap/img/iconfinder_Technology_Mix_-_Final-40_998693.png\" width=\"80\" height=\"80\" alt=\"\"/>\r\n");
+      out.write("                 <p>Welcome </p> \r\n");
+      out.write("                \r\n");
+      out.write("             \r\n");
+      out.write("            <form action=\"SERVLOGIN\" method=\"POST\">\r\n");
+      out.write("                <div class=\"input-group\">\r\n");
+      out.write("                <label>    <img src=\"bootstrap/img/iconfinder_user_male2_172626.png\" width=\"30\" height=\"30\" alt=\"\"/> Usuario:   </label>\r\n");
+      out.write("                <input type=\"text\" name=\"txtusuario\" placeholder=\"NOMBRE USUARIO\"><br>\r\n");
+      out.write("                </div>\r\n");
+      out.write("                \r\n");
+      out.write("                  <div class=\"input-group\">\r\n");
+      out.write("                 <label><img src=\"bootstrap/img/iconfinder_key_1055040.png\" width=\"30\" height=\"30\" alt=\"\"/> Password:</label>\r\n");
+      out.write("                <input type=\"password\" name=\"txtcontra\" placeholder=\"CONTRASEÑA\"><br><br>\r\n");
+      out.write("                  </div>\r\n");
+      out.write("                \r\n");
+      out.write("                <div class=\"form-group\">\r\n");
+      out.write("                <input class=\"btn btn-lg btn-danger\" type=\"submit\" name=\"btnIniciar\" value=\"INICIAR SESION\">\r\n");
+      out.write("                <center>      <a href=\"");
+      out.print( request.getContextPath() );
+      out.write("/Usuarios?opcion=crear\"  role=\"button\">Registrate es gratis</a></center> \r\n");
+      out.write("                </div>\r\n");
+      out.write("            </form>\r\n");
+      out.write("        </div>\r\n");
+      out.write("            </div></center> \r\n");
+      out.write("                <script src=\"bootstrap/js/script.js\" type=\"text/javascript\"></script>\r\n");
       out.write("        ");
-      out.write("\n");
-      out.write("\n");
-      out.write("<div>\n");
-      out.write("    <div class=\"encabezado\">\n");
-      out.write("        SISTEMA DE CONTROL DE INVENTARIO\n");
-      out.write("        <!-- Los href aca apuntan a los servlets creados dentro del controlador -->\n");
-      out.write("        <a href=\"index\" class=\"btn btn-primary btn-sm\" role=\"button\">Inicio</a>\n");
-      out.write("        <!--<a href=\"categorias\" class=\"btn btn-primary btn-sm\" role=\"button\">Categorias</a>-->\n");
-      out.write("        <a href=\"categorias?opcion=listar\" class=\"btn btn-primary btn-sm\" role=\"button\">Categorias</a>\n");
-      out.write("        \n");
-      out.write("           <a href=\"login.jsp\" class=\"btn btn-primary btn-sm\" role=\"button\">Salir</a>\n");
-      out.write("           \n");
-      out.write("          \n");
-      out.write("           \n");
-      out.write("           \n");
-      out.write("        \n");
-      out.write("    </div>\n");
-      out.write("    \n");
-      out.write("    <div class=\"contenido\">\n");
-      out.write("   <!--Este div no se cierra aquí, se cierra en el pie.jspf -->\n");
-      out.write("\r\n");
-      out.write("        \r\n");
-      out.write("        <!-- Todo el contenido de la aplicación -->\r\n");
-      out.write("        <h3>¡BIENVENID@S ");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${nom}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("</h3> \r\n");
-      out.write("           \r\n");
-      out.write("        \r\n");
-      out.write("        <!-- Vistar parciales de la parte inferior de nuestra aplicación -->\r\n");
-      out.write("        ");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("<!-- Aquí se deben cerrar los div abiertos en encabezado.jspf -->\n");
-      out.write("\n");
-      out.write("    \n");
-      out.write("    <div class=\"pie\">\n");
-      out.write("        @COPY; ITCA-FEPADE\n");
-      out.write("    </div>\n");
-      out.write("\n");
+
+            HttpSession sesion = request.getSession();
+            int tipo = 0;
+            if(request.getAttribute("tipo")!=null){
+                tipo = (Integer)request.getAttribute("tipo");
+                if(tipo==1){
+                    sesion.setAttribute("nombre",request.getAttribute("nombre"));
+                    sesion.setAttribute("tipo", tipo);
+                    response.sendRedirect("index1.jsp");
+                }
+            }
+            if(request.getParameter("cerrar")!=null){
+               session.invalidate();
+            }
+        
       out.write("\r\n");
       out.write("    </body>\r\n");
       out.write("</html>\r\n");
