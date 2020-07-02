@@ -73,9 +73,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                \r\n");
       out.write("                <div class=\"form-group\">\r\n");
       out.write("                <input class=\"btn btn-lg btn-danger\" type=\"submit\" name=\"btnIniciar\" value=\"INICIAR SESION\">\r\n");
-      out.write("                <center>      <a href=\"");
+      out.write("                <center><a href=\"");
       out.print( request.getContextPath() );
-      out.write("/Usuarios?opcion=crear\"  role=\"button\">Registrate es gratis</a></center> \r\n");
+      out.write("/Usuarios?opcion=crear\"  role=\"button\">Registrate es gratis</a><a href=\"Recuperar.jsp\">    He olvidao micomtraseña</a></center> \r\n");
       out.write("                </div>\r\n");
       out.write("            </form>\r\n");
       out.write("        </div>\r\n");
@@ -92,11 +92,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                     sesion.setAttribute("tipo", tipo);
                     response.sendRedirect("index1.jsp");
                 }
-                else{
-                    sesion.setAttribute("nombre",request.getAttribute("nombre"));
-                    sesion.setAttribute("tipo", tipo);
-                    response.sendRedirect("index2.jsp");
-                }
+                
             }
             if(request.getParameter("cerrar")!=null){
                session.invalidate();

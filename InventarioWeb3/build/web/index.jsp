@@ -30,7 +30,7 @@
                 
                 <div class="form-group">
                 <input class="btn btn-lg btn-danger" type="submit" name="btnIniciar" value="INICIAR SESION">
-                <center>      <a href="<%= request.getContextPath() %>/Usuarios?opcion=crear"  role="button">Registrate es gratis</a></center> 
+                <center><a href="<%= request.getContextPath() %>/Usuarios?opcion=crear"  role="button">Registrate es gratis</a><a href="Recuperar.jsp">    He olvidao micomtraseña</a></center> 
                 </div>
             </form>
         </div>
@@ -46,11 +46,7 @@
                     sesion.setAttribute("tipo", tipo);
                     response.sendRedirect("index1.jsp");
                 }
-                else{
-                    sesion.setAttribute("nombre",request.getAttribute("nombre"));
-                    sesion.setAttribute("tipo", tipo);
-                    response.sendRedirect("index2.jsp");
-                }
+                
             }
             if(request.getParameter("cerrar")!=null){
                session.invalidate();
