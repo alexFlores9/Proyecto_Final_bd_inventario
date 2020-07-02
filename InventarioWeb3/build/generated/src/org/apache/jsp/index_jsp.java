@@ -92,6 +92,11 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                     sesion.setAttribute("tipo", tipo);
                     response.sendRedirect("index1.jsp");
                 }
+                else{
+                    sesion.setAttribute("nombre",request.getAttribute("nombre"));
+                    sesion.setAttribute("tipo", tipo);
+                    response.sendRedirect("index2.jsp");
+                }
             }
             if(request.getParameter("cerrar")!=null){
                session.invalidate();
