@@ -22,7 +22,7 @@ public class Acceso {
         try{
             Class.forName(db.getDiver());
             con=DriverManager.getConnection(db.getUrl(),db.getUser(), db.getContra());
-            sql= "SELECT tipo FROM tb_usuario WHERE nombre='"+usuario+"' AND clave='"+contra+"'";
+            sql= "SELECT tipo FROM tb_usuario WHERE usuario='"+usuario+"' AND clave='"+contra+"'";
             pst=con.prepareStatement(sql);
             rs=pst.executeQuery();
                
