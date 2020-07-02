@@ -59,8 +59,9 @@
         </script>
      
     </head>
-    <body>
-    <center><h3>Registrate </h3></center> 
+    <body style='background-color: #12c0a3'>
+    <center><h3>Datos</h3></center> 
+    <hr>
     
     <div class="container"> 
         <div class="box">
@@ -114,7 +115,7 @@
             
             <div class="input-group checkbox">
                 <input type="checkbox" name="terms" id="terms" value="true" required>
-                <label for="terms">Al entrar al sistema, acepta terminos</label>
+                <label for="terms">Aceptar terminos</label>
             </div>
                 
             <div>
@@ -122,6 +123,7 @@
                     <%
                         if(request.getParameter("senal")!=null){
                     %>
+                    <h6>Al modificar un dato, tendras que volver a inicar sesión</h6>
                     <input type="submit" class="btn btn-default btn-sm" name="btnModificar" value="Actualizar" />
                       <center>
                      

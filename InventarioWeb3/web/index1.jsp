@@ -36,27 +36,32 @@
         <%@include file="WEB-INF/Vistas-Parciales/css-js.jspf" %>
         
     </head>
-    <body>
+    <body style="background-color: #12c0a3">
         <!-- Vistar parciales de la parte superior de nuestra aplicación -->
         <%@include file="WEB-INF/Vistas-Parciales/encabezado.jspf" %>
     
         <!-- Todo el contenido de la aplicación -->
-        <div>
-            Bienvenido  <%= sesion.getAttribute("nombre")%>
-            <a href="index.jsp?cerrar=true">Cerrar session</a>
-            <hr>
-            
+       <div>
+            Usuario: <%= sesion.getAttribute("nombre")%>
+           
             
         </div>
+            <link href="bootstrap/css/ps.css" rel="stylesheet" type="text/css"/>
+            
+        <div class="bg-3">
+
+    <h1 class="t-stroke t-shadow-halftone"> BIENVENIDO <%= sesion.getAttribute("nombre")%>       </h1>
+
+</div>
+
+    
+    
+    <img  src="bootstrap/img/50-Aniversario-01.png"  alt=""/>
         
         
-        <h3>¡BIENVENID@S!</h3>
       
         
-        <div class="container mt-4">
-            <h1>BIENVENIDO <%= sesion.getAttribute("nombre")%> <strong></strong>    </h1>
-        </div>
-        
+      
         <!-- Vistar parciales de la parte inferior de nuestra aplicación -->
         <%@include file="WEB-INF/Vistas-Parciales/pie.jspf" %>
       

@@ -15,10 +15,13 @@
     <li><a href="categorias?opcion=listar"  role="button">Categorias</a> </li>
     <li><a href="Usuarios?opcion=listar"  role="button">Usuario</a> </li>
       <li><a href="productos?opcion=listar"  role="button">Productos</a></li>
-        <li><a href="acercade"  role="button">Acercade</a></li>
+        <li><a href="acercade.jsp"  role="button">Acercade</a></li>
     
+        
+        
+        
     
-    <li><a href="#">Sesion</a>
+    <li><a href="#">Sesión</a>
     <ul>
     <li><a href="index.jsp?cerrar=true">Cerrar sesion</a></li>
 

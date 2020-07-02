@@ -14,7 +14,7 @@
     <center> <div  class="container">
              <div class="box">
                      <img src="bootstrap/img/iconfinder_Technology_Mix_-_Final-40_998693.png" width="80" height="80" alt=""/>
-                 <p>Welcome </p> 
+                 <p>Bienvenido</p> 
                 
              
             <form action="SERVLOGIN" method="POST">
@@ -24,13 +24,13 @@
                 </div>
                 
                   <div class="input-group">
-                 <label><img src="bootstrap/img/iconfinder_key_1055040.png" width="30" height="30" alt=""/> Password:</label>
+                 <label><img src="bootstrap/img/iconfinder_key_1055040.png" width="30" height="30" alt=""/> Contraseña:</label>
                 <input type="password" name="txtcontra" placeholder="CONTRASEÑA"><br><br>
                   </div>
                 
                 <div class="form-group">
                 <input class="btn btn-lg btn-danger" type="submit" name="btnIniciar" value="INICIAR SESION">
-                <center><a href="<%= request.getContextPath() %>/Usuarios?opcion=crear"  role="button">Registrate es gratis</a><a href="Recuperar.jsp">    He olvidao micomtraseña</a></center> 
+                <center><a href="<%= request.getContextPath() %>/Usuarios?opcion=crear"  role="button">Registrate es gratis  </a><a href="Recuperar.jsp">|    Has olvidado tu contraseña?</a></center> 
                 </div>
             </form>
         </div>
