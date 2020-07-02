@@ -35,6 +35,7 @@ public class SERVLOGIN extends HttpServlet {
                 
                 request.setAttribute("tipo",tipo );
                 request.setAttribute("nombre", nombre);
+                
                 rd=request.getRequestDispatcher("index.jsp");
             }
             

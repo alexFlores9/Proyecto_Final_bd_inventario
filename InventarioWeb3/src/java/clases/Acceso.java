@@ -23,6 +23,7 @@ public class Acceso {
             Class.forName(db.getDiver());
             con=DriverManager.getConnection(db.getUrl(),db.getUser(), db.getContra());
             sql= "SELECT tipo FROM tb_usuario WHERE usuario='"+usuario+"' AND clave='"+contra+"'";
+            
             pst=con.prepareStatement(sql);
             rs=pst.executeQuery();
                
@@ -37,6 +38,27 @@ public class Acceso {
             return tipo; 
         }   
     }
-    
+       public int validarREC(String usuario, String pregunta) {
+        int tipo=0;
+        try{
+            Class.forName(db.getDiver());
+            con=DriverManager.getConnection(db.getUrl(),db.getUser(), db.getPregunta());
+            sql= "SELECT tipo FROM tb_usuario WHERE usuario='"+usuario+"' AND pregunta='"+pregunta+"' AND clave ";
+        
+            
+            pst=con.prepareStatement(sql);
+            rs=pst.executeQuery();
+               
+            while(rs.next()){
+                tipo=rs.getInt(1);
+                
+            }
+            con.close();
+            rs.close();
+            return tipo;
+        }catch(SQLException | ClassNotFoundException e){
+            return tipo; 
+        }   
+    }
     
 }
