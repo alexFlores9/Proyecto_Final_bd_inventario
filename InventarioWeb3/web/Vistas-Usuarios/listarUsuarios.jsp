@@ -46,7 +46,7 @@
             <h3>Informacion de registros</h3>
             <table class="table table-striped">
                 <tr>
-                    <th>ID</th><th>NOMBRE</th><th>APELLIDO</th><th>CORREO</th><th>Usuario</th> <th>CLAVE</th> <th>TIPO</th><th>ESTADO</th><th>PREGUNTA</th><th>RESPUESTA</th><th>FECHA</th><th>     OPCIONES       .</th>
+                    <th>ID</th><th>NOMBRE</th><th>APELLIDO</th><th>CORREO</th><th>Usuario</th> <!--<th>CLAVE</th>--> <th>TIPO</th><th>ESTADO</th><th>PREGUNTA</th><th>RESPUESTA</th><th>FECHA</th><th>     OPCIONES       .</th>
                 </tr>
                 <%
                     for(int i=0;i < listaa.size(); i++){
@@ -61,7 +61,7 @@
                     <td><%= usu.getApellido() %></td>
                     <td><%= usu.getCorreo()%></td>
                     <td><%= usu.getUsuario()%></td>
-                    <td><%= usu.getClave() %></td>
+                    <!--<td><%--<%= usu.getClave() %>--%></td>-->
                     <td><%= usu.getTipo() %></td>
                     <td><%= usu.getEstado() %></td>
                     <td><%= usu.getPregunta() %></td>

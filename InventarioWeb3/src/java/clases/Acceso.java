@@ -27,7 +27,8 @@ public class Acceso {
             rs=pst.executeQuery();
                
             while(rs.next()){
-                tipo=rs.getInt(1); 
+                tipo=rs.getInt(1);
+                tipo=rs.getInt(2);
             }
             con.close();
             rs.close();
