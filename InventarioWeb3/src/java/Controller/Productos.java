@@ -13,10 +13,7 @@ import javax.servlet.http.HttpSession;
 
 import Model.*;
 import DAO.*;
-/**
- *
- * @author PC
- */
+
 public class Productos extends HttpServlet {
 
    /* protected void processRequest(HttpServletRequest request, HttpServletResponse response)
