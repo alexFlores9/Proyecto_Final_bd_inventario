@@ -1,0 +1,152 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  //  background: url("bootstrap/img/IMG-20200630-WA0050.jpg")center no-repeat fixed;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.box {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    margin: auto;
+    background: #f1fafa;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.container form .input-group {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.container form .input-group input[type="text"],
+.container form .input-group input[type="email"],
+.container form .input-group input[type="password"] {
+    font-size: 16px;
+    color: #666;
+    width: 100%;
+    outline: none;
+    padding: 15px;
+    background: none;
+    border: none;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.container form .input-group input[type="text"]:focus,
+.container form .input-group input[type="text"]:active,
+.container form .input-group input[type="email"]:focus,
+.container form .input-group input[type="email"]:active,
+.container form .input-group input[type="password"]:focus,
+.container form .input-group input[type="password"]:active {
+    outline: none;
+    border: 2px solid #1a73e8;
+}
+
+.container form .input-group input[type="text"].error,
+.container form .input-group input[type="email"].error,
+.container form .input-group input[type="password"].error {
+    border: 2px solid #D32F2F;
+}
+
+.container form .input-group input[type="text"].error+label,
+.container form .input-group input[type="email"].error+label,
+.container form .input-group input[type="password"].error+label {
+    color: #D32F2F;
+}
+
+.container form .input-group label {
+    color: #666;
+}
+
+.container form .input-group label.label {
+    position: absolute;
+    margin-left: 15px;
+    font-size: 15px;
+    line-height: 15px;
+    top: 19px;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.container form .input-group label.label.active {
+    font-size: 13px;
+    line-height: 13px;
+    top: -9px;
+    background: #f1fafa;
+    color: #1a73e8;
+    font-weight: bold;
+    padding: 4px 5px 4px 5px;
+}
+
+.container form .input-group.checkbox label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: #666;
+    padding: 8px 15px 8px 45px;
+    font-size: 1em;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    line-height: 22px;
+}
+
+.container form .input-group.checkbox label:hover {
+    background: #68a1ec;
+    color: #fff;
+}
+
+.container form .input-group.checkbox label:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 10px;
+    border-radius: 5px;
+    background: none;
+    border: 2px solid #1a73e8;
+}
+
+.container form .input-group.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.container form .input-group.checkbox input[type="checkbox"]:checked+label:before {
+    display: none;
+}
+
+.container form .input-group.checkbox input[type="checkbox"]:checked+label {
+    background: #1a73e8;
+    color: #f2f2f2;
+    padding: 8px 15px;
+}
+
+.container form input[type="submit"] {
+    display: inline-block;
+    background: #12c0a3;
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.container form input[type="submit"]:hover {
+    background: #19947f;
+}

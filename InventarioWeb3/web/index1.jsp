@@ -11,9 +11,18 @@
         if(!tipo.equals("1")){
              response.sendRedirect("index.jsp");
         }
+       
     }
 
+    
+    
+    
+    
 %>
+
+
+
+
 
 <!DOCTYPE html>
 <html>
@@ -30,9 +39,9 @@
     <body>
         <!-- Vistar parciales de la parte superior de nuestra aplicación -->
         <%@include file="WEB-INF/Vistas-Parciales/encabezado.jspf" %>
-        
+    
         <!-- Todo el contenido de la aplicación -->
-        <div style="text-align: left" >
+        <div>
             Bienvenido  <%= sesion.getAttribute("nombre")%>
             <a href="index.jsp?cerrar=true">Cerrar session</a>
             <hr>

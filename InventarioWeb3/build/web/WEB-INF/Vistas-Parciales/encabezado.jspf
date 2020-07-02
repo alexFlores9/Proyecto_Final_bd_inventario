@@ -14,6 +14,7 @@
     <li><a href="index1.jsp"  role="button">Inicio</a> </li>
     <li><a href="categorias?opcion=listar"  role="button">Categorias</a> </li>
     <li><a href="Usuarios?opcion=listar"  role="button">Usuario</a> </li>
+      <li><a href="Productos?opcion=listar"  role="button">Productos</a></li>
     
     
     <li><a href="#">Sesion</a>
