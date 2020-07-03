@@ -1,15 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
-    
-    
-    
-    
-
-
-
-
-
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,65 +10,25 @@
              correspondientes a estilos y js
         -->
         <%@include file="WEB-INF/Vistas-Parciales/css-js.jspf" %>
-         <style>
-            table, th, td {
-            // border: 10px solid #23fc76;
-             border-collapse: collapse;
-            }
-            #s{
-                width: 30%;
-                height:40%
-            }
-            #f{
-                width: 20%;
-                height:10%
-            }
-            </style>
+       
     </head>
-    <body>
+    <body style="background-color: #12c0a3">
         <!-- Vistar parciales de la parte superior de nuestra aplicación -->
         <%@include file="WEB-INF/Vistas-Parciales/encabezado.jspf" %>
-    
-        <h3>¡BIENVENID@S!</h3>
-          <table style="width:100%">
-                <tr>
-                    <th id="s"> Alumnos</th>
-                    <th id="f">Edad</th>
-                <th>Informacion</th>
-                </tr>
-
-                <tr>
-                    <th> Oscar Noe Lopez Ceron <br> <img width="80" src="bootstrap/img/iconfinder_user_male2_172626.png" alt=""/>  <hr> 
-                
-                    </th>
-              
-                    <th>18</th>
-                    <th>ve anime</th>
-                </tr>
-               
-                <tr>
-                    <th> Marlon Alexis Flores Navarrete <br> <img width="80" src="bootstrap/img/iconfinder_user_male2_172626.png" alt=""/>  </th>
-                    <th> 20 </th>
-                    <th> Juega free </th>
-                </tr>
-
-                <tr>
-                    <th> Ruben Natividad Ramos Cubias <br> <img width="80" src="bootstrap/img/iconfinder_user_male2_172626.png" alt=""/>  </th>
-                    <th> 20 </th>
-                    <th> .....) </th>
-                </tr>
-
-                <tr>
-                    <th> Marina de Jesus Coreas Pascual <br> <img width="80" src="bootstrap/img/iconfinder_user_male2_172626.png" alt=""/> </th>
-                    <th> 20 </th>
-                    <th> ..... </th>
-                </tr>
-
-                
-                
-           
-                
-        </table>    
+   
+        <hr><br>
+        <h3 align='center'>ESTUDIANTES <br> Técnico en Ingeniería en Sistemas Informáticos     <br> SIS22A</h3>
+        
+        <hr>
+        <h3 align='center'>Marlon Alexis Flores Navarrete<br>N.Carnet:189719 <br>  <img align='center' width="100" height="100" src="bootstrap/img/marlon.jpg" alt=""/></h3>
+        <h3 align='center'>Marina de Jesus Coras <br>N.Carnet: -----  <br>   <img align='center' width="100" height="100" src="bootstrap/img/marina.jpg" alt=""/></h3>
+        <h3 align='center'>Oscar Noé López Cerón <br>N.Carnet: 189019  <br>  <img align='center' width="100" height="100" src="bootstrap/img/oscar.jpg" alt=""/></h3>
+        
+        <h3 align='center'>Ruben Natividad Ramos Cubias<br>N.Carnet:190119 <br>  <img align='center' width="100" height="100" src="bootstrap/img/ruben.jpg" alt=""/></h3>
+        
+        
+        
+   
       
         
       
