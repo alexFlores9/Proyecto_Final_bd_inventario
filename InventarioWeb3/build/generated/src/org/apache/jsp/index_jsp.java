@@ -75,7 +75,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <input class=\"btn btn-lg btn-danger\" type=\"submit\" name=\"btnIniciar\" value=\"INICIAR SESION\">\r\n");
       out.write("                <center><a href=\"");
       out.print( request.getContextPath() );
-      out.write("/Usuarios?opcion=crear\"  role=\"button\">Registrate es gratis  </a><a>||</a><a href=\"Recuperar.jsp\">¿Has olvidado tu contraseña?</a></center> \r\n");
+      out.write("/Usuarios?opcion=crear\"  role=\"button\">Registrate es gratis  </a> <a>||</a> <a href=\"Recuperar.jsp\">¿Has olvidado tu contraseña?</a></center> \r\n");
       out.write("                </div>\r\n");
       out.write("            </form>\r\n");
       out.write("        </div>\r\n");

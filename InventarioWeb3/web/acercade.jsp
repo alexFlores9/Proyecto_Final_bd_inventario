@@ -20,8 +20,9 @@
         <h3 align='center'>ESTUDIANTES <br> Técnico en Ingeniería en Sistemas Informáticos     <br> SIS22A</h3>
         
         <hr>
-        <h3 align='center'>Marlon Alexis Flores Navarrete<br>N.Carnet:189719 <br>  <img align='center' width="100" height="100" src="bootstrap/img/marlon.jpg" alt=""/></h3>
-        <h3 align='center'>Marina de Jesus Coras <br>N.Carnet: -----  <br>   <img align='center' width="100" height="100" src="bootstrap/img/marina.jpg" alt=""/></h3>
+       
+        <h3 align='center'>Marina de Jesus Coreas <br>N.Carnet:191319  <br>   <img align='center' width="100" height="100" src="bootstrap/img/marina.jpg" alt=""/></h3>
+         <h3 align='center'>Marlon Alexis Flores Navarrete<br>N.Carnet:189719 <br>  <img align='center' width="100" height="100" src="bootstrap/img/marlon.jpg" alt=""/></h3>
         <h3 align='center'>Oscar Noé López Cerón <br>N.Carnet: 189019  <br>  <img align='center' width="100" height="100" src="bootstrap/img/oscar.jpg" alt=""/></h3>
         
         <h3 align='center'>Ruben Natividad Ramos Cubias<br>N.Carnet:190119 <br>  <img align='center' width="100" height="100" src="bootstrap/img/ruben.jpg" alt=""/></h3>
