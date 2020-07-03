@@ -34,7 +34,7 @@ public class RECUPERAR extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             String nombre;
-            String pregunta;
+            //String pregunta;
             
             int tipo=0;
             Acceso acc = new Acceso();
@@ -43,12 +43,12 @@ public class RECUPERAR extends HttpServlet {
             
             if(request.getParameter("btnRecuperar" )!= null){
                 nombre=request.getParameter("txtusuario");
-                pregunta=request.getParameter("txtpregunta");
-                tipo = acc.validarREC(nombre, pregunta);
+                //pregunta=request.getParameter("txtpregunta");
+                tipo = acc.validarREC(nombre);
                 
                 request.setAttribute("tipo",tipo );
                 request.setAttribute("nombre", nombre);
-                 request.setAttribute("pregunta", pregunta);
+                 //request.setAttribute("pregunta", pregunta);
                 rd=request.getRequestDispatcher("Recuperar.jsp");
             }
             

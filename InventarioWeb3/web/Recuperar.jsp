@@ -19,10 +19,10 @@
                 <label>    <img src="bootstrap/img/iconfinder_user_male2_172626.png" width="30" height="30" alt=""/> Usuario:   </label>
                 <input type="text" name="txtusuario" placeholder="NOMBRE USUARIO"><br>
                 </div>
-            <div class="input-group">
+            <!--<div class="input-group">
                 <label>    <img src="bootstrap/img/iconfinder_user_male2_172626.png" width="30" height="30" alt=""/> pregunta:   </label>
                 <input type="text" name="txtpregunta" placeholder="NOMBRE USUARIO"><br>
-                </div>
+                </div>-->
 <!--            <div class="input-group">
                 <label>    <img src="bootstrap/img/iconfinder_user_male2_172626.png" width="30" height="30" alt=""/> respuesta:   </label>
                 <input type="text" name="txtrespuesta" placeholder="NOMBRE USUARIO"><br>

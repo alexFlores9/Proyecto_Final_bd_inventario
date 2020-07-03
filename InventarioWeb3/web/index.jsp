@@ -30,7 +30,7 @@
                 
                 <div class="form-group">
                 <input class="btn btn-lg btn-danger" type="submit" name="btnIniciar" value="INICIAR SESION">
-                <center><a href="<%= request.getContextPath() %>/Usuarios?opcion=crear"  role="button">Registrate es gratis  </a><a href="Recuperar.jsp">|    Has olvidado tu contraseña?</a></center> 
+                <center><a href="<%= request.getContextPath() %>/Usuarios?opcion=crear"  role="button">Registrate es gratis  </a> <a>||</a> <a href="Recuperar.jsp">¿Has olvidado tu contraseña?</a></center> 
                 </div>
             </form>
         </div>

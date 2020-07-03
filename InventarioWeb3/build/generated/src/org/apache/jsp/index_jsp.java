@@ -57,7 +57,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <center> <div  class=\"container\">\r\n");
       out.write("             <div class=\"box\">\r\n");
       out.write("                     <img src=\"bootstrap/img/iconfinder_Technology_Mix_-_Final-40_998693.png\" width=\"80\" height=\"80\" alt=\"\"/>\r\n");
-      out.write("                 <p>Welcome </p> \r\n");
+      out.write("                 <p>Bienvenido</p> \r\n");
       out.write("                \r\n");
       out.write("             \r\n");
       out.write("            <form action=\"SERVLOGIN\" method=\"POST\">\r\n");
@@ -67,7 +67,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                </div>\r\n");
       out.write("                \r\n");
       out.write("                  <div class=\"input-group\">\r\n");
-      out.write("                 <label><img src=\"bootstrap/img/iconfinder_key_1055040.png\" width=\"30\" height=\"30\" alt=\"\"/> Password:</label>\r\n");
+      out.write("                 <label><img src=\"bootstrap/img/iconfinder_key_1055040.png\" width=\"30\" height=\"30\" alt=\"\"/> Contraseña:</label>\r\n");
       out.write("                <input type=\"password\" name=\"txtcontra\" placeholder=\"CONTRASEÑA\"><br><br>\r\n");
       out.write("                  </div>\r\n");
       out.write("                \r\n");
@@ -75,7 +75,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <input class=\"btn btn-lg btn-danger\" type=\"submit\" name=\"btnIniciar\" value=\"INICIAR SESION\">\r\n");
       out.write("                <center><a href=\"");
       out.print( request.getContextPath() );
-      out.write("/Usuarios?opcion=crear\"  role=\"button\">Registrate es gratis</a><a href=\"Recuperar.jsp\">    He olvidao micomtraseña</a></center> \r\n");
+      out.write("/Usuarios?opcion=crear\"  role=\"button\">Registrate es gratis  </a><a>||</a><a href=\"Recuperar.jsp\">¿Has olvidado tu contraseña?</a></center> \r\n");
       out.write("                </div>\r\n");
       out.write("            </form>\r\n");
       out.write("        </div>\r\n");
