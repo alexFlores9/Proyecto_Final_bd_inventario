@@ -63,7 +63,7 @@
         </div>
         <!-- End content -->
         <!--Boton para imprimir-->
-        <form name="reporte" action="/PROYECTOFINAL23062020/pdfProducto" method="POST">
+        <form name="reporte" action="/InventarioWeb3/pdfProducto" method="POST">
             <input type="submit" value="IMPRIMIR PDF" name="btnver" />
         </form>
         

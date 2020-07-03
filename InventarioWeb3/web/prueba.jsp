@@ -4,6 +4,7 @@
     Author     : alex
 --%>
 
+<%@page import="clases.Acceso"%>
 <%@page import="Model.Categoria"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page session="true" %>
@@ -20,7 +21,7 @@
        
     }
 %>
-
+<%  Acceso es= new Acceso();    %>
 <!DOCTYPE html>
 <%@page import="Model.Usuario"%>
 
@@ -34,6 +35,8 @@
         <a href="acercade.jsp"></a>
         <h1>Hello World!</h1>
          Bienvenido  <%= sesion.getAttribute("nombre")%>
+  
+         
         <h3>Respone correctamente la pregunta</h3>
             
           <p>¿  ?</p>
