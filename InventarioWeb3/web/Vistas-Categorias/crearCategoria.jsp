@@ -1,5 +1,25 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%@page session="true" %>
+
+<%
+    HttpSession sesion = request.getSession();
+    if(sesion.getAttribute("tipo")== null){
+    response.sendRedirect("index.jsp");
+    }
+    else{
+        String tipo = session.getAttribute("tipo").toString();
+        if(!tipo.equals("1")){
+             response.sendRedirect("index.jsp");
+        }
+       
+    }
+
+    
+    
+    
+    
+%>
 <!-- Para importar los datos de la clase Categoria -->
 <jsp:useBean id="categoria" scope="session" class="Model.Categoria" />
 
